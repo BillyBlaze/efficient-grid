@@ -1,0 +1,47 @@
+{% spaceless %}
+{% set count = options.columns %}
+{% set asArray = Array(count) %}
+
+{% if !canExtend %}
+@grid-columns: {{ options.columns }};
+{% endif %}
+
+{% for i, y in asArray %}
+.col-{{ type }}-{{ i + 1 }} {
+	{% if !canExtend %}
+		{% for key, column in data.columns %}
+			{{ key }}: {{ column|replace('\$INDEX', i + 1, 'g') }};
+		{% endfor %}
+	{% else %}
+		@media @media-{{type}} {
+			.col-{{ options.baseClassName }}-{{ i + 1 }};
+		}
+	{% endif %}
+}
+.col-{{ type }}-offset-{{ i + 1 }} {
+	{% if !canExtend %}
+		{% for key, offset in data.offsets %}
+			{{ key }}: {{ offset|replace('\$INDEX', i + 1, 'g') }};
+		{% endfor %}
+	{% else %}
+		@media @media-{{type}} {
+			.col-{{ options.baseClassName }}-offset-{{ i + 1 }};
+		}
+	{% endif %}
+}
+{% endfor %}
+
+{% for classname, contents in data.extra %}
+.{{ classname|replace(options.baseClassName, type, 'g') }} {
+	{% if !canExtend %}
+		{% for key, data in contents %}
+			{{ key }}: {{ data }};
+		{% endfor %}
+	{% else %}
+		@media @media-{{type}} {
+			.{{ classname }};
+		}
+	{% endif %}
+}
+{% endfor %}
+{% endspaceless %}

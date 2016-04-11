@@ -1,0 +1,32 @@
+{
+  "name": "less-grid-flexbox",
+  "version": "0.0.1",
+  "description": "Efficient LESS grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BillyBlaze/less-grid-flexbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BillyBlaze/less-grid-flexbox/issues"
+  },
+  "homepage": "https://github.com/BillyBlaze/less-grid-flexbox#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-consolidate": "^0.2.0",
+    "gulp-cssbeautify": "^0.1.3",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-less": "^3.0.5",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-require-tasks": "^1.0.3",
+    "swig": "^1.4.2",
+    "through2": "^2.0.1"
+  }
+}
