@@ -1,12 +1,9 @@
 {% spaceless %}
-{% set count = options.columns %}
-{% set asArray = Array(count) %}
-
 {% if !canExtend %}
 @grid-columns: {{ options.columns }};
 {% endif %}
 
-{% for i, y in asArray %}
+{% for i, y in Array(options.columns) %}
 .col-{{ type }}-{{ i + 1 }} {
 	{% if !canExtend %}
 		{% for key, column in data.columns %}
