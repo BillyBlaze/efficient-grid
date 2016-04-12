@@ -65,13 +65,22 @@ module.exports = {
 				"order": "1"
 			},
 
+			"nowrap-xs": {
+				"flex-wrap": "nowrap"
+			},
+			"wrap-xs": {
+				"flex-wrap": "wrap"
+			},
+			"wrap-reverse-xs": {
+				"flex-wrap": "wrap"
+			},
+
 			"hidden-xs": {
 				"display": "none"
 			},
 			"visible-xs": {
 				"display": "block"
 			},
-
 			"visible-xs-block": {
 				"display": "block"
 			},
