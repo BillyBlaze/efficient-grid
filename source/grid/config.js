@@ -51,6 +51,10 @@ module.exports = {
 			"between-xs": {
 				"justify-content": "space-between"
 			},
+			
+			"stretch-xs": {
+				"align-content": "stretch"
+			},
 
 			"first-xs": {
 				"-webkit-box-ordinal-group": "0",
