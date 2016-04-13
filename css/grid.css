@@ -7,9 +7,9 @@
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
   max-width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin-bottom: 2rem;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 30px;
   min-height: 1px;
 }
 .col.reverse {
@@ -36,8 +36,8 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -1rem;
-  margin-left: -1rem;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 .row.reverse {
   -webkit-box-orient: horizontal;
@@ -153,6 +153,9 @@
 }
 .col-xs-offset-12 {
   margin-left: 100%;
+}
+.col-xs-offset-reset {
+  margin-left: 0%;
 }
 .start-xs {
   -webkit-box-pack: start;
@@ -420,6 +423,11 @@
 @media (min-width: 544px) {
   .col-sm-offset-12 {
     margin-left: 100%;
+  }
+}
+@media (min-width: 544px) {
+  .col-sm-offset-reset {
+    margin-left: 0%;
   }
 }
 @media (min-width: 544px) {
@@ -733,6 +741,11 @@
   }
 }
 @media (min-width: 768px) {
+  .col-md-offset-reset {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 768px) {
   .start-md {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -1043,6 +1056,11 @@
   }
 }
 @media (min-width: 992px) {
+  .col-lg-offset-reset {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
   .start-lg {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -1350,6 +1368,11 @@
 @media (min-width: 1200px) {
   .col-xlg-offset-12 {
     margin-left: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-xlg-offset-reset {
+    margin-left: 0%;
   }
 }
 @media (min-width: 1200px) {
