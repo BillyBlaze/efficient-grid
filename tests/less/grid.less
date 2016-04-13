@@ -1,0 +1,27 @@
+@import "../../dist/less/_variables.less";
+@import "../../dist/less/grid.less";
+
+.container:extend(.row) {
+
+	.info:extend(.col-xs-12, .col-md-9, .col-lg-6) {
+		background: white;
+	}
+
+	.warning:extend(.col-xs-12, .col-md-9, .col-lg-6) {
+		display: none;
+		background: yellow;
+	}
+
+}
+
+.container-fluid:extend(.row.fluid) {
+
+	.info:extend(.col-xs-12, .col-md-9, .col-lg-6) {
+		background: white;
+	}
+
+	.warning:extend(.col-xs-12, .col-md-9, .col-lg-6) {
+		display: none;
+		background: yellow;
+	}
+}
