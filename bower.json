@@ -1,0 +1,26 @@
+{
+  "name": "efficient-grid",
+  "description": "Efficient LESS/CSS flexbox grid",
+  "main": "index.js",
+  "authors": [
+    "Paul de Vries <pablo@blacktower.nl>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "flexbox",
+    "less",
+    "css"
+  ],
+  "homepage": "https://github.com/BillyBlaze/less-grid-flexbox",
+  "ignore": [
+    "**/.*",
+    "test",
+    "tasks",
+    "source",
+    "node_modules",
+    "gulpfile.js",
+    ".csscomb.json",
+    "bower_components",
+    "package.json"
+  ]
+}
