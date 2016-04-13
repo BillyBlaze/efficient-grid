@@ -408,6 +408,13 @@
   display: inline-flex;
 }
 
+[class^="stretch"] .nested {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (min-width: 544px) {
   .col-sm-1 {
     -webkit-flex-basis: 8.33333333%;
