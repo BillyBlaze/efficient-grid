@@ -1,2 +1,2 @@
-# less-grid-flexbox
+# efficient-grid
 Efficient LESS grid

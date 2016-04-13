@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BillyBlaze/less-grid-flexbox.git"
+    "url": "git+https://github.com/BillyBlaze/efficient-grid.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BillyBlaze/less-grid-flexbox/issues"
+    "url": "https://github.com/BillyBlaze/efficient-grid/issues"
   },
-  "homepage": "https://github.com/BillyBlaze/less-grid-flexbox#readme",
+  "homepage": "https://github.com/BillyBlaze/efficient-grid#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",

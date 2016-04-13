@@ -11,7 +11,7 @@
     "less",
     "css"
   ],
-  "homepage": "https://github.com/BillyBlaze/less-grid-flexbox",
+  "homepage": "https://github.com/BillyBlaze/efficient-grid",
   "ignore": [
     "**/.*",
     "test",
