@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<div class="home">
+	{% for post in site.sections %}
+		{{ post.content }}
+	{% endfor %}
+</div>
