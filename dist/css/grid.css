@@ -125,6 +125,11 @@
   padding-bottom: 1rem;
 }
 
+.vertical > * {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .vertical.reverse {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
