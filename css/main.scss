@@ -56,6 +56,14 @@ $on-laptop:        800px;
 	width: 100%;
 }
 
+.page-content {
+	.wrapper {
+		padding: 0 10rem;
+		margin: 0 auto;
+		max-width: 992px;
+	}
+}
+
 
 html {
 	font-size: 3px;
