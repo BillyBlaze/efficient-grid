@@ -16,11 +16,7 @@
 	{% endif %}
 }
 .col-{{ type }}-offset-{{ i + 1 }} {
-	{% if type == options.lastStep %}
-	@media @media-{{ type }} {
-	{% else %}
-	@media @media-{{ type }}, @media-{{ type }}-max {
-	{% endif %}
+	@media @media-{{ type }}-max {
 		{% for key, offset in data.offsets %}
 			{{ key }}: {{ offset|replace('\$INDEX', i + 1, 'g') }};
 		{% endfor %}
@@ -43,11 +39,7 @@
 {% endfor %}
 {% for classname, contents in data.visible %}
 .{{ classname|replace(options.baseClassName, type, 'g') }} {
-	{% if type == options.lastStep %}
-	@media @media-{{type}} {
-	{% else %}
-	@media @media-{{type}}, @media-{{type}}-max {
-	{% endif %}
+	@media @media-{{type}}-max {
 		{% for key, data in contents %}
 			{{ key }}: {{ data }};
 		{% endfor %}

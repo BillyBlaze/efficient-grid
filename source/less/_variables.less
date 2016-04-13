@@ -20,10 +20,11 @@
 @media-lg:					~"(min-width: @{screen-lg})";
 @media-xlg:					~"(min-width: @{screen-xlg})";
 
-@media-xs-max:				~"(max-width: @{screen-xs-max})";
-@media-sm-max:				~"(max-width: @{screen-sm-max})";
-@media-md-max:				~"(max-width: @{screen-md-max})";
-@media-lg-max:				~"(max-width: @{screen-lg-max})";
+@media-xs-max:				~"@{media-xs} and (max-width: @{screen-xs-max})";
+@media-sm-max:				~"@{media-sm} and (max-width: @{screen-sm-max})";
+@media-md-max:				~"@{media-md} and (max-width: @{screen-md-max})";
+@media-lg-max:				~"@{media-lg} and (max-width: @{screen-lg-max})";
+@media-xlg-max:				~"@{media-xlg})";
 //
 // Setup row media helpers
 //
