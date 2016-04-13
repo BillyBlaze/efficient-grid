@@ -17,8 +17,8 @@
 }
 .col-{{ type }}-offset-{{ i + 1 }} {
 	{% if !canExtend %}
-		{% for key, column in data.columns %}
-			{{ key }}: {{ column|replace('\$INDEX', i + 1, 'g') }};
+		{% for key, offset in data.offsets %}
+			{{ key }}: {{ offset|replace('\$INDEX', i + 1, 'g') }};
 		{% endfor %}
 	{% else %}
 		@media @media-{{type}} {
