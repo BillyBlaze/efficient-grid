@@ -16,11 +16,15 @@
 	{% endif %}
 }
 .col-{{ type }}-offset-{{ i + 1 }} {
-	@media @media-{{ type }}-max {
-		{% for key, offset in data.offsets %}
-			{{ key }}: {{ offset|replace('\$INDEX', i + 1, 'g') }};
+	{% if !canExtend %}
+		{% for key, column in data.columns %}
+			{{ key }}: {{ column|replace('\$INDEX', i + 1, 'g') }};
 		{% endfor %}
-	}
+	{% else %}
+		@media @media-{{type}} {
+			.col-{{ options.baseClassName }}-offset-{{ i + 1 }};
+		}
+	{% endif %}
 }
 {% endfor %}
 
