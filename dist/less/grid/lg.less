@@ -166,18 +166,6 @@
 	}
 }
 
-.vertical-lg {
-	@media @media-lg {
-		.vertical-xs;
-	}
-}
-
-.vertical-reverse-lg {
-	@media @media-lg {
-		.vertical-reverse-xs;
-	}
-}
-
 .top-lg {
 	@media @media-lg {
 		.top-xs;
@@ -241,6 +229,18 @@
 .wrap-reverse-lg {
 	@media @media-lg {
 		.wrap-reverse-xs;
+	}
+}
+
+.vertical-lg {
+	@media @media-lg-max {
+		flex-direction: column;
+	}
+}
+
+.vertical-reverse-lg {
+	@media @media-lg-max {
+		flex-direction: column-reverse;
 	}
 }
 

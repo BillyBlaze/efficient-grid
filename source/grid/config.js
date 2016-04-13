@@ -53,13 +53,6 @@ module.exports = {
 				"text-align": "end"
 			},
 
-			"vertical-xs": {
-				"flex-direction": "column"
-			},
-			"vertical-reverse-xs": {
-				"flex-direction": "column-reverse"
-			},
-
 			"top-xs": {
 				"align-items": "flex-start"
 			},
@@ -101,7 +94,14 @@ module.exports = {
 			}
 		},
 
-		"visible": {
+		"maxWidth": {
+
+			"vertical-xs": {
+				"flex-direction": "column"
+			},
+			"vertical-reverse-xs": {
+				"flex-direction": "column-reverse"
+			},
 
 			"hidden-xs": {
 				"display": "none"

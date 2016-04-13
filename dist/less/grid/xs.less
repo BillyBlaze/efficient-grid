@@ -127,14 +127,6 @@
 	text-align: end;
 }
 
-.vertical-xs {
-	flex-direction: column;
-}
-
-.vertical-reverse-xs {
-	flex-direction: column-reverse;
-}
-
 .top-xs {
 	align-items: flex-start;
 }
@@ -179,6 +171,18 @@
 
 .wrap-reverse-xs {
 	flex-wrap: wrap;
+}
+
+.vertical-xs {
+	@media @media-xs-max {
+		flex-direction: column;
+	}
+}
+
+.vertical-reverse-xs {
+	@media @media-xs-max {
+		flex-direction: column-reverse;
+	}
 }
 
 .hidden-xs {

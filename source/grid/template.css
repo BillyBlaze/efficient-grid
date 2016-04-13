@@ -41,7 +41,7 @@
 	{% endif %}
 }
 {% endfor %}
-{% for classname, contents in data.visible %}
+{% for classname, contents in data.maxWidth %}
 .{{ classname|replace(options.baseClassName, type, 'g') }} {
 	@media @media-{{type}}-max {
 		{% for key, data in contents %}
