@@ -23,7 +23,7 @@ module.exports = {
 
 		"extra": {
 
-			"offset-xs-reset": {
+			"col-xs-offset-reset": {
 				"margin-left": "0%"
 			},
 

@@ -154,7 +154,7 @@
 .col-xs-offset-12 {
   margin-left: 100%;
 }
-.offset-xs-reset {
+.col-xs-offset-reset {
   margin-left: 0%;
 }
 .start-xs {
@@ -426,7 +426,7 @@
   }
 }
 @media (min-width: 544px) {
-  .offset-sm-reset {
+  .col-sm-offset-reset {
     margin-left: 0%;
   }
 }
@@ -741,7 +741,7 @@
   }
 }
 @media (min-width: 768px) {
-  .offset-md-reset {
+  .col-md-offset-reset {
     margin-left: 0%;
   }
 }
@@ -1056,7 +1056,7 @@
   }
 }
 @media (min-width: 992px) {
-  .offset-lg-reset {
+  .col-lg-offset-reset {
     margin-left: 0%;
   }
 }
@@ -1371,7 +1371,7 @@
   }
 }
 @media (min-width: 1200px) {
-  .offset-xlg-reset {
+  .col-xlg-offset-reset {
     margin-left: 0%;
   }
 }
