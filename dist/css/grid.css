@@ -67,9 +67,9 @@
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
   max-width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-bottom: 30px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
   min-height: 1px;
 }
 
@@ -98,8 +98,8 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -1rem;
+  margin-left: -1rem;
 }
 
 .row.reverse {
