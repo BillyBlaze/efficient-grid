@@ -52,8 +52,24 @@ $on-laptop:        800px;
 ;
 
 @import "normalize.css";
-.fluid {
-	width: 100%;
+body {
+	overflow-x: hidden;
+}
+
+header {
+	background: $main-color;
+	min-height: 180px;
+
+	h1 {
+		color: white;
+		margin: 0;
+	}
+
+	.col-xs-12 {
+		padding: 0 10rem;
+		max-width: 992px;
+		margin: 0 auto;
+	}
 }
 
 .page-content {
