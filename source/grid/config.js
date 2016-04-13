@@ -40,7 +40,7 @@ module.exports = {
 				"margin-left": "0%"
 			},
 
-			"start-xs": {
+			"left-xs": {
 				"justify-content": "flex-start",
 				"text-align": "start"
 			},
@@ -48,7 +48,7 @@ module.exports = {
 				"justify-content": "center",
 				"text-align": "center"
 			},
-			"end-xs": {
+			"right-xs": {
 				"justify-content": "flex-end",
 				"text-align": "end"
 			},
@@ -62,6 +62,7 @@ module.exports = {
 			"bottom-xs": {
 				"align-items": "flex-end"
 			},
+
 			"around-xs": {
 				"justify-content": "space-around"
 			},
