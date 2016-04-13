@@ -408,7 +408,11 @@
   display: inline-flex;
 }
 
-[class^="stretch"] .nested {
+.stretch-xs .nested,
+.stretch-sm .nested,
+.stretch-md .nested,
+.stretch-lg .nested,
+.stretch-xlg .nested {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -617,6 +621,13 @@
     -webkit-align-content: stretch;
     -ms-flex-line-pack: stretch;
     align-content: stretch;
+  }
+
+  .stretch-sm .nested {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .first-sm {
@@ -890,6 +901,13 @@
     align-content: stretch;
   }
 
+  .stretch-md .nested {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .first-md {
     -webkit-box-ordinal-group: 0;
     -webkit-order: -1;
@@ -1161,6 +1179,13 @@
     align-content: stretch;
   }
 
+  .stretch-lg .nested {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .first-lg {
     -webkit-box-ordinal-group: 0;
     -webkit-order: -1;
@@ -1430,6 +1455,13 @@
     -webkit-align-content: stretch;
     -ms-flex-line-pack: stretch;
     align-content: stretch;
+  }
+
+  .stretch-xlg .nested {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .first-xlg {
