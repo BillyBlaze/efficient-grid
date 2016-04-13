@@ -16,15 +16,15 @@
 	{% endif %}
 }
 .col-{{ type }}-offset-{{ i + 1 }} {
-	{% if !canExtend %}
+	{% if type == options.lastStep %}
+	@media @media-{{ type }} {
+	{% else %}
+	@media @media-{{ type }}, @media-{{ type }}-max {
+	{% endif %}
 		{% for key, offset in data.offsets %}
 			{{ key }}: {{ offset|replace('\$INDEX', i + 1, 'g') }};
 		{% endfor %}
-	{% else %}
-		@media @media-{{type}} {
-			.col-{{ options.baseClassName }}-offset-{{ i + 1 }};
-		}
-	{% endif %}
+	}
 }
 {% endfor %}
 
@@ -39,6 +39,19 @@
 			.{{ classname }};
 		}
 	{% endif %}
+}
+{% endfor %}
+{% for classname, contents in data.visible %}
+.{{ classname|replace(options.baseClassName, type, 'g') }} {
+	{% if type == options.lastStep %}
+	@media @media-{{type}} {
+	{% else %}
+	@media @media-{{type}}, @media-{{type}}-max {
+	{% endif %}
+		{% for key, data in contents %}
+			{{ key }}: {{ data }};
+		{% endfor %}
+	}
 }
 {% endfor %}
 {% endspaceless %}

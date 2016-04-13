@@ -91,7 +91,10 @@ module.exports = {
 			},
 			"wrap-reverse-xs": {
 				"flex-wrap": "wrap"
-			},
+			}
+		},
+
+		"visible": {
 
 			"hidden-xs": {
 				"display": "none"

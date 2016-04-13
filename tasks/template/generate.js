@@ -4,6 +4,8 @@ var _ = require("lodash");
 var config = require(process.cwd() + '/source/grid/config.js');
 var taskPrefix = 'template:generate:';
 
+config.options.lastStep = config.options.gridClassNames[config.options.gridClassNames.length-1];
+
 for(var i = 0; config.options.gridClassNames.length > i; i++) {
 	var taskName = config.options.gridClassNames[i];
 	var taskFn = function () {
