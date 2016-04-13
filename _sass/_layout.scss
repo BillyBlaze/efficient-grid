@@ -13,7 +13,14 @@ h1,h2,h3,h4,h5,h6,p {
 	margin: 0 15px 10px;
 }
 p {
-	margin-bottom: 30px;
+	margin-bottom: 25px;
+	font-size: 18px;
+}
+h4 {
+	font-size: 15px;
+	font-weight: 600;
+	text-align: center;
+	margin: 0;
 }
 header {
 	background: $main-color;
@@ -40,6 +47,15 @@ header {
 	}
 }
 .home {
+	&.small-gaps {
+		> .row {
+			margin-bottom: 25px;
+
+			&:last-child {
+				margin-bottom: 60px;
+			}
+		}
+	}
 	.large {
 		min-height: 80px !important;
 	}
@@ -66,6 +82,6 @@ header {
 	> .row > div div.darker {
 		background: darken($main-color, 15%);
 		margin: 10px 0 !important;
-		min-height: 10px;
+		min-height: 20px;
 	}
 }
