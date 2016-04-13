@@ -23,6 +23,10 @@ module.exports = {
 
 		"extra": {
 
+			"offset-xs-reset": {
+				"margin-left": "0%"
+			},
+
 			"start-xs": {
 				"justify-content": "flex-start",
 				"text-align": "start"
@@ -51,7 +55,7 @@ module.exports = {
 			"between-xs": {
 				"justify-content": "space-between"
 			},
-			
+
 			"stretch-xs": {
 				"align-content": "stretch"
 			},
