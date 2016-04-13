@@ -12,7 +12,7 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$main-color:       #FF8300;
+$main-color:       #00ABFF;
 $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
@@ -51,6 +51,7 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
+@import "normalize.css";
 .fluid {
 	width: 100%;
 }
@@ -62,13 +63,28 @@ html {
 body {
 	font-size: 22px;
 }
-.row > div {
-	box-sizing: border-box;
-	position: relative;
-}
-.row > div div {
-	background: $main-color;
-	min-height: 30px;
+.home {
+	.large {
+		min-height: 80px !important;
+	}
+	> .row > div {
+		box-sizing: border-box;
+		position: relative;
+	}
+	> .row > div > div {
+		background: $main-color;
+		min-height: 30px;
+	}
+	> .row > div div.dark {
+		background: darken($main-color, 5%);
+		margin: 10px 0 !important;
+		min-height: 5px;
+	}
+	> .row > div div.darker {
+		background: darken($main-color, 15%);
+		margin: 10px 0 !important;
+		min-height: 10px;
+	}
 }
 
 @import "grid.css";
