@@ -10,6 +10,7 @@ module.exports = {
 				callback(null, chunk);
 			}))
 			.pipe($.less())
+			.pipe($.groupCssMediaQueries())
 			.pipe($.autoprefixer({
 				browsers: ['last 2 versions', 'IE > 9', 'Android > 2.1'],
 				cascade: false

@@ -12,6 +12,19 @@ module.exports = {
 
 	"data": {
 
+
+		"column": {
+			"flex-grow": "1",
+			"flex-basis": "0",
+			"max-width": "100%",
+
+			"padding-right": "@grid-gutter / 2",
+			"padding-left": "@grid-gutter / 2",
+
+			"margin-bottom": "@grid-gutter",
+			"min-height": "1px"
+		},
+
 		"columns": {
 			"flex-basis": "100% / (@grid-columns / $INDEX)",
 			"max-width": "100% / (@grid-columns / $INDEX)"

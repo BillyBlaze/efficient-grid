@@ -4,7 +4,7 @@
 {% endif %}
 
 {% for i, y in Array(options.columns) %}
-.col-{{ type }}-{{ i + 1 }} {
+.col-{{ type }}-{{ i + 1 }}:extend(.col) {
 	{% if !canExtend %}
 		{% for key, column in data.columns %}
 			{{ key }}: {{ column|replace('\$INDEX', i + 1, 'g') }};
