@@ -1,6 +1,7 @@
 module.exports = {
+	dep: ['template:generate'],
 	fn: function(gulp, $, _, config) {
-		gulp.src('./source/less/*.less')
+		return gulp.src('./source/less/*.less')
 			.pipe(gulp.dest('./dist/less'));
 	}
 }

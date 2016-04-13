@@ -1,10 +1,12 @@
 var through2 = require("through2");
 
 module.exports = {
+	dep: ['template:move'],
 	fn: function(gulp, $, _, config) {
-		gulp.src(['./dist/less/grid.less'])
+		return gulp.src(['./dist/less/grid.less'])
+			.pipe($.plumber())
 			.pipe(through2.obj(function (chunk, enc, callback) {
-				chunk.contents = new Buffer('@import "_variables.less";' + chunk.contents.toString().replace(/ \(reference\)/g, ""));
+				chunk.contents = new Buffer('@import "_variables.less";\n' + chunk.contents.toString().replace(/\(reference\)/gmi, ""));
 				callback(null, chunk);
 			}))
 			.pipe($.less())
