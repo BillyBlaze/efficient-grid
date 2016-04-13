@@ -1,3 +1,71 @@
+html {
+	font-size: 3px;
+}
+body {
+	overflow-x: hidden;
+	font-size: 22px;
+}
+.hidden {
+	display: none;
+}
 h1,h2,h3,h4,h5,h6,p {
 	font-family: 'Roboto', sans-serif;
+	margin: 0 15px 10px;
+}
+p {
+	margin-bottom: 30px;
+}
+header {
+	background: $main-color;
+	min-height: 180px;
+	margin-bottom: 60px;
+
+	h1 {
+		color: white;
+		margin: 0;
+	}
+
+	.col-xs-12 {
+		padding: 0 10rem;
+		max-width: 992px;
+		margin: 0 auto;
+	}
+}
+
+.page-content {
+	.wrapper {
+		padding: 0 10rem;
+		margin: 0 auto;
+		max-width: 992px;
+	}
+}
+.home {
+	.large {
+		min-height: 80px !important;
+	}
+	> .row {
+		margin-bottom: 60px;
+
+		&.no-margin {
+			margin-bottom: 0;
+		}
+	}
+	> .row > div {
+		box-sizing: border-box;
+		position: relative;
+	}
+	> .row > div > div {
+		background: $main-color;
+		min-height: 30px;
+	}
+	> .row > div div.dark {
+		background: darken($main-color, 5%);
+		margin: 10px 0 !important;
+		min-height: 5px;
+	}
+	> .row > div div.darker {
+		background: darken($main-color, 15%);
+		margin: 10px 0 !important;
+		min-height: 10px;
+	}
 }
