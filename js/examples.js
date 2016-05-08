@@ -3,7 +3,7 @@ $(function() {
 	$('article h2').each(function(ind, elm) {
 
 		var $elm = $(elm);
-		$('<a href="#">Show example <i class="fa fa-code round" aria-hidden="true"></i></a>').addClass('btn')
+		$('<a href="#">Show example <i class="material-icons round">code</i></a>').addClass('btn')
 			.prependTo($elm)
 			.on("click", function(e) {
 				e.preventDefault();
