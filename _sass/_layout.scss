@@ -122,7 +122,7 @@ header {
 }
 
 footer {
-	background: #350000;
+	background: darken($main-color, 35%);
 	min-height: 130px;
 
 	.col-xs-12 {
@@ -270,7 +270,7 @@ h2 .btn {
 
 	i {
 		margin-left: 5px;
-		margin-top: -8px;
+		margin-top: -5px;
 		position: relative;
 		top: 5px;
 	}
@@ -297,6 +297,7 @@ figure.highlight {
 	flex: 1 1 auto;
 	display: flex;
 	padding: 1rem;
+	width: 100%;
 }
 .example-code {
 	height: 0;

@@ -23,6 +23,9 @@ layout: default
 </div>
 {% endhighlight %}
 {% highlight less %}
+@import "grid/grid.less";
+@import "grid/_variables.less";
+
 .container:extend(.row) {
     .column-name:extend(.col-xs-8) {}
     .column-other:extend(.col-xs-4) {}
