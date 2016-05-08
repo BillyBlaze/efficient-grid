@@ -19,3 +19,18 @@ layout: default
 	<div class="col"><div></div></div>
 	<div class="col"><div></div></div>
 </div>
+
+<div class="row example-code">
+{% highlight html %}
+<div class="row">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+</div>
+{% endhighlight %}
+{% highlight less %}
+.fluid-container:extend(.row) {
+    .repeatable:extend(.col) {}
+}
+{% endhighlight %}
+</div>

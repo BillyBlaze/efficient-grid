@@ -84,4 +84,20 @@ layout: default
 			</div>
 		</div>
 	</div>
+
+	<div class="row example-code">
+{% highlight html %}
+<div class="row left-xs">
+    <div class="col-xs-4"></div>
+</div>
+<div class="row bottom-xs">
+    <div class="col-xs-4"></div>
+</div>
+{% endhighlight %}
+{% highlight less %}
+.container:extend(.row, .left-xs) {
+    .column:extend(.col-xs-4) {}
+}
+{% endhighlight %}
+	</div>
 </div>

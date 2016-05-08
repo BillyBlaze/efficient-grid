@@ -14,4 +14,19 @@ layout: default
 	<div class="col-xs-4"><div></div></div>
 	<div class="col-xs-4"><div></div></div>
 	<div class="col-xs-4"><div></div></div>
+
+	<div class="col-xs-12 example-code">
+{% highlight html %}
+<div class="row">
+    <div class="col-xs-8"></div>
+    <div class="col-xs-4"></div>
+</div>
+{% endhighlight %}
+{% highlight less %}
+.container:extend(.row) {
+    .column-name:extend(.col-xs-8) {}
+    .column-other:extend(.col-xs-4) {}
+}
+{% endhighlight %}
+	</div>
 </div>

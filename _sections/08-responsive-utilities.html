@@ -70,4 +70,16 @@ layout: default
 			</div>
 		</div>
 	</div>
+	<div class="row example-code">
+{% highlight html %}
+<div class="row">
+    <div class="col hidden-xs"></div>
+</div>
+{% endhighlight %}
+{% highlight less %}
+.container:extend(.row) {
+    .repeatable:extend(.col, .hidden-xs) {}
+}
+{% endhighlight %}
+	</div>
 </div>

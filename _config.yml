@@ -6,10 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Efficient LESS Grid
+title: Efficient Grid
 email: efficient-grid@aerosol.me
-description: >
-  Efficient LESS flexbox grid system
+description: Flexbox grid system
 baseurl: "/efficient-grid"
 #url: "http://yourdomain.com"
 #twitter_username: jekyllrb

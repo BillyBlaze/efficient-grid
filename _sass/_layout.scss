@@ -1,12 +1,33 @@
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 html {
 	font-size: 3px;
+
+	@media (max-width: 400px) {
+		font-size: 1px;
+	}
 }
 body {
-	overflow-x: hidden;
 	font-size: 22px;
+}
+.wrappert {
+	overflow: hidden;
 }
 .hidden {
 	display: none;
+}
+h1 {
+	strong {
+		display: block;
+	}
+	small {
+		display: block;
+		font-size: 30px;
+		font-weight: 300;
+	}
 }
 h1,h2,h3,h4,h5,h6,p {
 	font-family: 'Roboto', sans-serif;
@@ -15,12 +36,16 @@ h1,h2,h3,h4,h5,h6,p {
 p {
 	margin-bottom: 25px;
 	font-size: 18px;
+	line-height: 25px;
 }
 h3, h4 {
 	font-size: 15px;
 	font-weight: 600;
 	text-align: center;
 	margin: 0;
+}
+.row h3 {
+	margin: 0 15px 10px;
 }
 h3 {
 	font-size: 18px;
@@ -37,7 +62,7 @@ header {
 	}
 
 	.col-xs-12 {
-		padding: 0 10rem;
+		padding: 0 15rem;
 		max-width: 992px;
 		margin: 0 auto;
 	}
@@ -133,5 +158,163 @@ footer {
 		background: darken($main-color, 15%);
 		margin: 10px 0 !important;
 		min-height: 20px;
+	}
+}
+
+
+
+
+.btn {
+	font-size: 16px;
+	text-decoration: none;
+
+	&.btn-default {
+		color: $main-color;
+		padding: 6px 10px;
+		border-radius: 7px;
+		border: 2px solid $main-color;
+
+		&:hover {
+			background: $main-color;
+			color: white;
+		}
+	}
+
+	&.active {
+		.round {
+			background: $main-color;
+			color: white;
+		}
+		&:hover {
+			.round {
+				color: $main-color;
+				background: white;
+			}
+		}
+	}
+	&:hover {
+		.round {
+			background: $main-color;
+			color: white;
+		}
+	}
+
+	.round {
+		border: 2px solid $main-color;
+		color: $main-color;
+		border-radius: 50%;
+		width: 35px;
+		height: 35px;
+		padding: 5px;
+		font-size: 19px;
+	}
+}
+
+h2 .btn {
+	font-size: 14px;
+	float: right;
+	color: $main-color;
+	margin-top: 1px;
+
+	i {
+		margin-left: 5px;
+	}
+
+	@media (max-width: 540px) {
+		float: left;
+		width: 35px;
+		overflow: hidden;
+		height: 35px;
+		white-space: nowrap;
+		text-indent: -100px;
+		margin-right: 10px;
+
+		i {
+			text-indent: 0;
+		}
+	}
+}
+
+
+
+figure.highlight {
+	margin: 0;
+	flex: 1 1 auto;
+	display: flex;
+	padding: 1rem;
+}
+.example-code {
+	height: 0;
+	overflow: hidden;
+
+	&.visible {
+		height: auto;
+		overflow: visible;
+		flex-wrap: wrap;
+	}
+
+	figure {
+		position: relative;
+	}
+
+	pre {
+		flex: 1 1 auto;
+		font-size: 16px;
+		margin: 0;
+		min-height: 10px;
+		background: #EFEFEF;
+		box-shadow: 0 0 0 1px #D4D4D4 inset;
+		padding: 13px;
+		max-width: 100%;
+		overflow: auto;
+
+		code {
+			&:after {
+				content: attr(data-lang);
+				background: white;
+				position: absolute;
+				top: 1rem;
+				right: 1rem;
+				border: 1px solid #D4D4D4;
+				padding: 4px 4px 4px 7px;
+				border-radius: 0 0 0 7px;
+				font-size: 12px;
+				font-family: Roboto;
+				color: #969696;
+			}
+		}
+	}
+}
+.row:not(.no-margin) + .example-code {
+	margin-top: -60px;
+}
+.small-gaps {
+	.row:not(.no-margin) + .example-code {
+		margin-top: -25px;
+	}
+}
+
+
+
+section {
+	margin-bottom: 60px;
+
+	p {
+		margin: 0;
+		padding: 10px !important;
+
+		&:first-child {
+			padding-left: 0 !important;
+		}
+		&:last-child {
+			padding-right: 0 !important;
+		}
+
+		@media (max-width: 767px) {
+			padding: 10px 0 !important;
+		}
+	}
+	.nested > .row {
+		padding: 0 15px 10px;
 	}
 }

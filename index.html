@@ -2,8 +2,10 @@
 layout: default
 ---
 
-<div class="home">
+<div>
 	{% for post in site.sections %}
-		{{ post.content }}
+		{% if forloop.first == false %}<article class="home">{% endif %}
+			{{ post.content }}
+		{% if forloop.first == false %}</article>{% endif %}
 	{% endfor %}
 </div>

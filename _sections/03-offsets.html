@@ -16,4 +16,19 @@ layout: default
 	<div class="col-xs-3"><div></div></div>
 	<div class="col-xs-2 col-xs-offset-2"><div></div></div>
 	<div class="col-xs-3 col-xs-offset-2"><div></div></div>
+
+	<div class="col-xs-12 example-code">
+{% highlight html %}
+<div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-2 col-xs-offset-8"></div>
+</div>
+{% endhighlight %}
+{% highlight less %}
+.container:extend(.row) {
+    .column-name:extend(.col-xs-2) {}
+    .column-other:extend(.col-xs-2, .col-xs-offset-8) {}
+}
+{% endhighlight %}
+	</div>
 </div>

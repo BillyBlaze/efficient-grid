@@ -38,4 +38,29 @@ layout: default
 			</div>
 		</div>
 	</div>
+
+	<div class="col-xs-12 example-code">
+{% highlight html %}
+<div class="row">
+    <div class="nested col-xs-4">
+        <div class="row">
+            <div class="col-xs-12"></div>
+        </div>
+    </div>
+    <div class="nested col-xs-8">
+        <div class="row">
+            <div class="col-xs-12"></div>
+        </div>
+    </div>
+</div>
+{% endhighlight %}
+{% highlight less %}
+.container:extend(.row) {}
+
+.left-container:extend(.col-xs-4, .nested),
+.right-container:extend(.col-xs-8, .nexted) {
+    .column:extend(.col-xs-12) {}
+}
+{% endhighlight %}
+	</div>
 </div>
